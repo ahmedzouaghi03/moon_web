@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+  <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+
+         <header>
+      <div class="logo">
+    <img src="../logo6.png" alt="Our logo">
+      </div>
+  
+  <nav>
+    <ul class="nav">
+      
+      <li class="animated-underline"><a href="../acceuil.html">Acceuil</a></li>
+
+      <li class="animated-underline "><a href="../avis/avis.html">Avis </a></li>
+    </ul>
+  </nav>
+    </header>
+    <div class="video-background">
+        <video autoplay loop muted>
+        <source src="../background2.mp4" type="video/mp4">
+        </video>
+        <div class="form-container">
+            <h1>Contactez-nous</h1>
+            <form action="envoyer.php" method="post" name="emailContact" class="blur">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required><br><br>
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required><br><br>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="adresse">Adresse :</label>
+                <textarea id="adresse" name="adresse" required></textarea><br><br>
+                <label for="sexe">Sexe :</label>
+                <select id="sexe" name="sexe">
+                    <option value="homme">Homme</option>
+                    <option value="femme">Femme</option>
+                    <option value="non-binaire">Non-binaire</option>
+                </select><br><br>
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Efacer">
+
+	       </form>
+        </div>
+    </div>
+
+    
+	
+</body>
+</html>

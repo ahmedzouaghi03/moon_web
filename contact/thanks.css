@@ -1,0 +1,130 @@
+@font-face {
+  font-family: robotoSlab;
+  src: url('../fonts/robota-slab/RobotoSlab-Regular.ttf');     
+}
+
+@font-face {
+  font-family: robotoSlabMeduim;
+  src: url('../fonts/robota-slab/RobotoSlab-Medium.ttf');     
+}
+
+*
+{
+margin: 0;
+padding: 0;
+font-family: 'poppins', sans-serif; box-sizing: border-box;
+}
+.container{
+width: 100vw;
+height: 100vh;
+background-image: url(./sources/background1.jpg);
+background-position: center;
+background-size: cover;
+padding: 0 8%;
+font-family: robotoSlab;
+}
+
+.logo{
+width: 140px;
+padding: 20px 0; 
+cursor: pointer;
+}
+
+.content {
+top: 50%;
+position: absolute;
+transform: translateY(-50%) ;
+color: #fff;
+font-family: robotoSlab;
+}
+.content h1{
+font-size: 70px; font-weight: 600;
+font-family: robotoSlab;
+}
+.content h6{
+font-size: 30px;
+font-family: robotoSlab;
+}
+.content h1 span{
+color: #47C0E1;
+font-family: robotoSlab;
+}
+
+@media (max-width: 760px) {
+  .content button{ 
+    
+   padding: 1.5vw 2.5vw;
+  
+    }
+}
+
+.content button{ 
+background: transparent;
+border: 2px solid #fff;
+outline: none;
+padding: 16px 28px;
+color: #fff;
+display: flex;
+align-items: center; 
+margin-top: 30px;
+cursor: pointer;
+font-family: robotoSlab;
+}
+.home{ 
+font-family: robotoSlab;
+text-decoration: none;
+color: #fff;
+
+align-items: center; 
+cursor: pointer;
+}
+
+.content button:hover{ 
+background: #0064A9;
+border: 2px solid #fff;
+outline: none;
+padding: 16px 28px;
+color: #fff;
+display: flex;
+align-items: center; 
+margin-top: 30px;
+cursor: pointer;
+}
+.content button img{ 
+width: 15px;
+margin-left: 10px;
+}
+
+.launch-time{
+display: flex;
+font-family: robotoSlab;
+}
+.launch-time div{
+flex-basis: 100px;
+font-family: robotoSlab;
+}
+.launch-time div p{
+font-family: robotoSlab;
+font-size: 70px;
+margin-bottom: -14px;
+}
+
+.rocket {
+width: 250px;
+position: absolute;
+right: 10%;
+bottom: 0;
+animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket{
+    0%{
+    bottom: 0; 
+    opacity: 0;
+    }
+    100%{
+    bottom: 105%; 
+    opacity: 1;
+    }
+}
+
