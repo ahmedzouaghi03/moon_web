@@ -1,10 +1,4 @@
 
-    /* Styles for header */
-    /*header {
-      position: relative;
-      height: 100vh;
-      overflow: hidden;
-    }*/
 html {
     scroll-behavior: smooth;
   }
@@ -33,7 +27,8 @@ html, body {
   font-family: robotoSlabMeduim;
   src: url('../fonts/robota-slab/RobotoSlab-Medium.ttf');     
 }
-/*to add a font*/ 
+
+/*style for the logo*/
 #logo {
   width: 9%; 
   height: auto;
@@ -96,20 +91,10 @@ html, body {
   left: 0;  
 }   
 
-/*for the welcome text*/ 
-
-/*.header-content h2{
-    font-size: 10vw;
-    color: darkblue;
-    
-}*/
-
 
 
 
 /*for the welcome text*/
-
-
 
 .vision h1{
     font-family: robotoSlabMeduim;
@@ -147,10 +132,7 @@ header {
 
 
 }
-.paragraph{
-    color: #333;
-    font-size:3vw;
-    }
+
 
 
 @media (max-width: 600px) {
@@ -158,6 +140,7 @@ header {
     height: 30vh;
   }
   
+/*for the scroll button*/
 }
 ::-webkit-scrollbar {
   width: 10px; /* Width of the scrollbar */
@@ -174,7 +157,8 @@ header {
 ::-webkit-scrollbar-thumb:hover {
   background: #01497a ; /* Color of the scrollbar handle on hover */
 }
-/*for the scroll button*/
+
+/*for the navigation bar*/
 .li1:hover{
     cursor: pointer;
     font-family:robotoSlabMeduim;
@@ -271,35 +255,35 @@ nav ul li a:hover:before {
     }
 }
 
-    #video-background {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      object-fit: cover;
-    }
+/*for the video */
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
 #video-background video{
   width: 100%;
   height: 100%;
 }
 
+/*for the smaller screens video*/
 @media (max-width: 600px) {
-    #video-background{
-        height: 30vh;
-    }
+  #video-background{
+      height: 30vh;
+  }
 }
  
     
 .nav.scroll-style {
   background-color:rgb(0,0,0,0.9);
-  /*background-color: #222;*/
-  /*background-color: rgb(36,36,36,0.9)*/
-  /* Additional style changes */
+
 }
 
-
+/*for the second nav after scrolling*/
 .nav.scroll-style ul {
   list-style-type: none;
   margin: 0;
@@ -315,58 +299,7 @@ nav ul li a:hover:before {
   color: #fff;
   text-decoration: none;
   padding: 5px;
-}
-
-.nav.scroll-style a:hover {
-  
-}
-/*for the second nav*/ 
-
-.nav.scroll-style a:hover {
-  
-}
-
-.home{ 
-font-family: robotoSlab;
-text-decoration: none;
-color: #fff;
-
-}
-.home:hover{ 
-font-family: robotoSlabMeduim;
-text-decoration: none;
-color: black;
-}
-
-
-    
-   
-      .after ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .after li {
-      width: 100%;
-      height: 700px;
-      margin: 0;
-      padding: 0;
-      border: none;
-      background-color: #fff;
-      
-    }
-    .after:hover {
-        opacity: 0.8;
-        cursor: pointer;
-    }
-
-    
-    /* Styles for footer */
-    
-
+}    
 
 .header {
   display: flex;
@@ -413,14 +346,12 @@ color: black;
     transform: translateY(0);
   }
 
-
+/*for the table*/
 table{
     text-align: center;
     margin-left: auto;
-    margin-right: auto;
-   
+    margin-right: auto;   
 }
-
 table td{
     text-align: center;
 }
@@ -429,65 +360,58 @@ table td{
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
-  }
+}
 
-  .animate-element.show {
+.animate-element.show {
     opacity: 1;
     transform: translateY(0);
-  }
+}
 
-
-
-
-.small-image {
+.small-image{
   width: 20%; /* Adjust as needed */
   height: auto; /* Adjust as needed */
 }
+
+/*for the form*/
 form{
-   
-            position:relative;
-            top: 99%;
-            left: 57%;
-            transform: translate(-50%, -50%);
-            
-            padding: 20px;
-            width: 400px;
-            max-width: 100%;
-            z-index: 9999;
+  position:relative;
+  top: 99%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 400px;
+  max-width: 100%;
+  z-index: 9999;
 }
 .line {
-      border: none;
-      height: 3px;
-    width: 30vw;
-      background-color: #333;
-    position: relative;
-    
-    }
+  border: none;
+  height: 3px;
+  width: 30vw;
+  background-color: #333;
+  position: relative;
+}
+
 input[type="submit"] {  
   background-color: transparent;
   border: 2px solid white;
- position: absolute;
-left: center;
-    bottom: 10%;
+  position: absolute;
+  left: center;
+  bottom: 10%;
   color: #333;
   padding: 20px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 0.8vw;
- cursor: pointer;
-font-family: robotoSlab;
+  cursor: pointer;
+  font-family: robotoSlab;
 }
 @media (max-width: 600px) {
   input[type="submit"] {  
-  
     right: 47%;
     bottom: 10%;
-  
-  font-size: 2.1vw;
-
-}
-  
+    font-size: 2.1vw;
+  }
 }
 
 input[type="submit"]:hover {
@@ -495,24 +419,21 @@ input[type="submit"]:hover {
   color: white;
 }
 
-
- footer {
-          
-      padding: 20px 0;
-      font-family: Arial, sans-serif;
-      background-color: #333;
-      color: #fff;
-
-    }
-    .fab {
-      margin-right: 10px;
-    }
+footer {   
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+}
+.fab {
+  margin-right: 10px;
+}
 footer a{
-    margin-right: 10px;
-    color: aliceblue;
+  margin-right: 10px;
+  color: aliceblue;
 }
 
-footer a: visited{
+footer a:visited{
     margin-right: 10px;
     color: white;
     background-color: aliceblue;
@@ -553,5 +474,60 @@ footer a:checked{
   text-align: center;
 }
 
+.services {
+  padding: 50px 0;
+  font-family: robotoSlab;
+    
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+
+  text-align: center;
+}
+.home{ 
+  font-size:18px;  
+
+}
+
+.home{ 
+  font-family: robotoSlab;
+  text-decoration: none;
+  color: #333;
+  
+
+}
+.home:hover{ 
+  font-family: robotoSlabMeduim;
+  text-decoration: none;
+  color: aliceblue;
+}
+button {
+  background-color: white;
+  border: 2px solid white;
+
+  color: aliceblue;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1vw;
+  cursor: pointer;
+  font-family: robotoSlab;
+  margin-bottom: 50px;
+}
+button:hover {
+  background-color: #333;
+  color: aliceblue;
+}
+.paragraph{
+  color: #333;
+  font-size:2.5vw;
+  }
+  @media (max-width: 768px) {
+    .paragraph{
+      
+      font-size:6vw;
+      }
+  }
 /*for the scroll images*/
 

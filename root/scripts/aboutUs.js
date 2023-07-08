@@ -57,7 +57,7 @@ window.addEventListener('scroll', function() {
       if(verif==0){
     logo.style.opacity = '0';
       fadeIn(logo);
-    logo.src = '../logo10.png';
+    logo.src = '../images/logo10.png';
        verif=1;}
      
     
@@ -68,7 +68,7 @@ window.addEventListener('scroll', function() {
       
     logo.style.opacity = '0';
           fadeIn(logo);
-    logo.src = '../logo8.png';
+    logo.src = '../images/logo8.png';
       verif=0;}
   }
 });
